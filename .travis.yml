@@ -5,7 +5,7 @@ python:
   - pypy
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -qq build-essential libssl-dev swig python-m2crypto python-numpy
+  - sudo apt-get install -qq dnsutils build-essential libssl-dev swig python-m2crypto python-numpy
   - pip install m2crypto salsa20 shadowsocks
 script:
   - python test.py -c tests/table.json
