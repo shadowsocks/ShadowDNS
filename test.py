@@ -9,8 +9,8 @@ import select
 import time
 from subprocess import Popen, PIPE
 
-p1 = Popen(['python', 'shadowdns/dnsrelay.py', '-c', sys.argv[-1]], shell=False,
-           bufsize=0, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)
+p1 = Popen(['sudo', 'python', 'shadowdns/dnsrelay.py', '-c', sys.argv[-1]],
+           shell=False, bufsize=0, stdin=PIPE, stdout=PIPE, stderr=PIPE, close_fds=True)
 p2 = Popen(['ssserver', '-c', sys.argv[-1]], shell=False, bufsize=0, stdin=PIPE,
            stdout=PIPE, stderr=PIPE, close_fds=True, env=os.environ)
 p3 = None
