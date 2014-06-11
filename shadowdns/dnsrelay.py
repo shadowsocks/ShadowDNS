@@ -98,6 +98,8 @@ class UDPDNSRelay():
                 self._remote_sock.sendto(data, self._remote_addr)
                 logging.info('request %s', req.hostname)
             except Exception as e:
+                import traceback
+                traceback.print_exc()
                 logging.error(e)
 
     def _handle_remote(self, sock):
@@ -121,6 +123,8 @@ class UDPDNSRelay():
                         del self._id_to_addr[req_id]
                     logging.info('response %s', res)
             except Exception as e:
+                import traceback
+                traceback.print_exc()
                 logging.error(e)
 
     def handle_events(self, events):

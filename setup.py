@@ -17,7 +17,7 @@ setup(
         'shadowdns': ['README.rst', 'LICENSE', 'config.json']
     },
     install_requires=[
-        'shadowsocks==2.0.2'
+        'shadowsocks==2.0.3'
     ],
     entry_points="""
     [console_scripts]
