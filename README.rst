@@ -7,8 +7,7 @@ A DNS forwarder using
 `Shadowsocks <https://github.com/clowwindy/shadowsocks>`__ as the
 server.
 
-ShadowDNS creates a DNS server at localhost. Currently only UDP
-implemented. TCP will arrive soon.
+ShadowDNS creates a DNS server at localhost.
 
 Experimental; use with caution.
 
@@ -103,14 +102,11 @@ Bugs and Issues
 ---------------
 
 Please visit `Issue
-Tracker <https://github.com/clowwindy/shadowdns/issues?state=open>`__
+Tracker <https://github.com/clowwindy/ShadowDNS/issues?state=open>`__
 
 Mailing list: http://groups.google.com/group/shadowsocks
 
-Also see
-`Troubleshooting <https://github.com/clowwindy/shadowsocks/wiki/Troubleshooting>`__
-
 .. |PyPI version| image:: https://img.shields.io/pypi/v/shadowdns.svg?style=flat
    :target: https://pypi.python.org/pypi/shadowdns
-.. |Build Status| image:: https://img.shields.io/travis/clowwindy/shadowdns/master.svg?style=flat
-   :target: https://travis-ci.org/clowwindy/shadowdns
+.. |Build Status| image:: https://img.shields.io/travis/clowwindy/ShadowDNS/master.svg?style=flat
+   :target: https://travis-ci.org/clowwindy/ShadowDNS

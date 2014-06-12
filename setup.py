@@ -8,7 +8,7 @@ setup(
     name="shadowdns",
     version="0.1.2",
     license='MIT',
-    description="A DNS forwarder for shadowsock",
+    description="A DNS forwarder using Shadowsocks as the server",
     author='clowwindy',
     author_email='clowwindy42@gmail.com',
     url='https://github.com/clowwindy/shadowdns',
