@@ -227,6 +227,12 @@ class TCPDNSRelay(DNSRelay):
                     self._destroy(local, remote)
                 else:
                     if not encryptor:
+                        try:
+                            req = asyncdns.parse_response(data[2:])
+                            if req:
+                                logging.info('request %s', req.hostname)
+                        except Exception as e:
+                            logging.error(e)
                         encryptor = \
                             encrypt.Encryptor(self._config['password'],
                                               self._config['method'])
@@ -253,6 +259,12 @@ class TCPDNSRelay(DNSRelay):
                 else:
                     encryptor = self._local_to_encryptor[local]
                     data = encryptor.decrypt(data)
+                    try:
+                        res = asyncdns.parse_response(data[2:])
+                        if res:
+                            logging.info('response %s', res)
+                    except Exception as e:
+                        logging.error(e)
                     local.send(data)
             except (OSError, IOError) as e:
                 self._destroy(local, remote)
