@@ -80,13 +80,10 @@ Please visit [Issue Tracker]
 
 Mailing list: http://groups.google.com/group/shadowsocks
 
-Also see [Troubleshooting]
 
-
-[Build Status]:    https://img.shields.io/travis/clowwindy/shadowdns/master.svg?style=flat
-[Issue Tracker]:   https://github.com/clowwindy/shadowdns/issues?state=open
+[Build Status]:    https://img.shields.io/travis/clowwindy/ShadowDNS/master.svg?style=flat
+[Issue Tracker]:   https://github.com/clowwindy/ShadowDNS/issues?state=open
 [PyPI]:            https://pypi.python.org/pypi/shadowdns
 [PyPI version]:    https://img.shields.io/pypi/v/shadowdns.svg?style=flat
 [Shadowsocks]:     https://github.com/clowwindy/shadowsocks
-[Travis CI]:       https://travis-ci.org/clowwindy/shadowdns
-[Troubleshooting]: https://github.com/clowwindy/shadowsocks/wiki/Troubleshooting
+[Travis CI]:       https://travis-ci.org/clowwindy/ShadowDNS
