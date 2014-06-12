@@ -5,8 +5,7 @@ ShadowDNS
 
 A DNS forwarder using [Shadowsocks] as the server.
 
-ShadowDNS creates a DNS server at localhost. Currently only UDP implemented. 
-TCP will arrive soon.
+ShadowDNS creates a DNS server at localhost.
 
 Experimental; use with caution.
 

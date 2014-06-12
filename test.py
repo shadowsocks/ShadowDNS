@@ -34,7 +34,7 @@ try:
 
         if local_ready and server_ready and p3 is None:
             time.sleep(1)
-            p3 = Popen(['dig', '@127.0.0.1', 'a', 'www.example.com'],
+            p3 = Popen(['dig', '@127.0.0.1', 'any', 'google.com'],
                        shell=False, bufsize=0, close_fds=True)
             break
             
