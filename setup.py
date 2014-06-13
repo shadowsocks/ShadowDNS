@@ -6,7 +6,7 @@ with open('README.rst') as f:
 
 setup(
     name="shadowdns",
-    version="0.1.2",
+    version="0.1.3",
     license='MIT',
     description="A DNS forwarder using Shadowsocks as the server",
     author='clowwindy',
@@ -17,7 +17,7 @@ setup(
         'shadowdns': ['README.rst', 'LICENSE', 'config.json']
     },
     install_requires=[
-        'shadowsocks==2.0.3'
+        'shadowsocks==2.0.4'
     ],
     entry_points="""
     [console_scripts]
